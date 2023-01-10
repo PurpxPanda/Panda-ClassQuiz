@@ -2,29 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>JavaScript Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <!--Title stays the same-->
-    <header>
-        <h1 class="main-title">JavaScript Quiz</h1>
+    <!-- main title -->
+  <header>
+        <h1 class="main-title">Javascript Quiz</h1>
         <div id="timer"></div>
     </header>
-<!-- Start of page -->
-<section class="start" id="start">
-    <h2>Good Luck!</h2>
-    <p>Press start to begin</p>
-    <button class="start-btn" id="start-btn">Start</button>
-    <section>
-
-
-
-
-
-
-
-
-
+    <!-- start of page -->
+    <section class="start" id="start">
+        <h2>Welcome to my Javascript quiz!</h2>
+        <p>Press start to begin.</p>
+        <button class="begin" id="begin">Start</button>
+    </section>
+    <!-- question content -->
+    <section class="page-content" id="page-content">
+        <div class="question" id="question">
+            <h2 class="question-text" id="question-text"></h2>
+        </div>
+        <div class="answer-wrapper" id="answer-buttons">
+            <button class="options" id="option-one" onclick="questionValidator('a')">
+            </button>
+            <button class="options" id="option-two" onclick="questionValidator('b')">
+            </button>
+            <button class="options" id="option-three" onclick="questionValidator('c')">
+            </button>
+            <button class="options" id="option-four" onclick="questionValidator('d')">
+            </button>
+        </div>
+        <div class="feedback" id="correct">
+            <p class="feedback-text">
+                Correct!
+            </p>
+        </div>
+        <div class="incorrect feedback" id="incorrect">
+            <p class="feedback-text">
+                incorrect :(
+            </p>
+        </div>
+    </section>
+    <!-- Leaderboard -->
+    <section class="highscore" id="highScore">
+        <h2>Your Score:</h2>
+        <div class="score" id="score">Score</div>
+        <div class="form-wrapper">
+        <form>
+            <label for="name">Nickname:</label>
+            <input type="text" name="nickName" placeholder="Name" id="nickname">
+        </form>
+        <button class="submit" id="submit" onclick="submitName()">Submit</button>
+        </div>
+    </section>
+    <!-- leader board page -->
+    <section class="leader" id="leader">
+        <h2>Leader Board</h2>
+        <div class="leaderBox" id="leaderBox">Leaders</div>
+        <button class="submit" id="goBack" onclick="reset()">Try Again</button>
+    </section>
+    <script src="assets/js/script.js"></script>
 </body>
+</html>

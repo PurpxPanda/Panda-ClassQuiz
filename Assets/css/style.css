@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-1: #000;
+    --color-2: gray;
+    --color-3: #ffffff;
+    --color-4: #b58ff1;
+    --color-5: #2ec4b6;
+  }
+body {
+    color: var(--color-1);
+    background-color: var(--color-4);
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* header styles */
+header {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header h1 {
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(97, 212, 247, 0.959);
+    display: inline; 
+}
+.timer {
+    color: var(--color-5);
+}
+/* Question styles */
+main {
+    margin-top: 200px;
+}
+.question {
+    height: 100px;
+    width: 80%;
+    margin: auto;
+}
+.question-text {
+    text-align:center;
+    margin-top: 100px;
+}
+/* button styles */
+.options, .start button, .submit {
+    background-color: var(--color-5);
+    border: 2px solid var(--color-3);
+    border-radius: 25px;
+    color: var(--color-3);
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 25%;
+    display: block;
+    margin-top: 10px;
+}
+.options:hover {
+    background-color: var(--color-2);
+}
+.answer-wrapper {
+    width: 80%;
+    margin: auto;
+    
+}
+/* highscore styles */
+.leader, .highscore, .feedback, .page-content {
+    display: none;
+}
+.feedback {
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    border-top: 1px solid var(--color-1);
+}
+.feedback p {
+    text-align: center;
+    padding: 20px;
+}
+
+.start {
+    width: 80%;
+    margin: auto;
+}
+.start h2, .start p {
+    text-align: center;
+    padding: 10px;
+}
+.start button {
+    margin: auto;
+    margin-top: 50px;
+}
+.start h2 {
+    margin-top: 100px;
+}
+/* high score styles */
+.highscore h2, .leader h2 {
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+}
+.highscore {
+    margin-top: 175px;
+}
+.score, .leaderBox {
+    background-color: var(--color-3);
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 25px;
+    border: solid 2px var(--color-5);
+}
+
+.form-wrapper {
+    text-align: center;
+    margin: 50px auto;
+}
+.submit {
+    margin: 50px auto;
+}
+/* Leader Board styles */
